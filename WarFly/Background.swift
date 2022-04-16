@@ -9,6 +9,7 @@ import SpriteKit
 
 class Background: SKSpriteNode {
     
+    //back
     static func populateBackground(at point: CGPoint) -> Background {
         
         let background = Background(imageNamed: "background")
