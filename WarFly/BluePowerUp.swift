@@ -1,5 +1,5 @@
 //
-//  GreenPowerUp.swift
+//  BluePowerUp.swift
 //  WarFly
 //
 //  Created by Pavel Popov on 03.05.2022.
@@ -7,9 +7,10 @@
 
 import SpriteKit
 
-class GreenPowerUp: PowerUp {
+class BluePowerUp: PowerUp {
+    
     init() {
-        let textureAtlas = SKTextureAtlas(named: "GreenPowerUp")
+        let textureAtlas = SKTextureAtlas(named: "BluePowerUp")
         super.init(textureAtlas: textureAtlas)
     }
     
