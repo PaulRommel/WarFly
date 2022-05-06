@@ -32,6 +32,7 @@
 		DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D9282186C200D3B652 /* YellowShot.swift */; };
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
 		DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EA2825888F00D1FC91 /* MenuScene.swift */; };
+		DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		DA5221D9282186C200D3B652 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		DAD548EA2825888F00D1FC91 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,21 +96,22 @@
 			isa = PBXGroup;
 			children = (
 				A022E8B7280B0BD2008BC4F3 /* AppDelegate.swift */,
+				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
 				A022E8BD280B0BD2008BC4F3 /* GameScene.swift */,
-				A022E8CE280B1114008BC4F3 /* Background.swift */,
-				A022E8BF280B0BD2008BC4F3 /* GameViewController.swift */,
+				DA5221DB2821909F00D3B652 /* Assets.swift */,
+				DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */,
+				A0263CBE280DC879006EE8A3 /* PlayerPlane.swift */,
+				DA26F82A281D6654001E7201 /* Enemy.swift */,
 				A0711437280C3F1500DD644D /* Island.swift */,
 				A0C4236F280C909A00C4099D /* Cloud.swift */,
+				DA5221D72821829700D3B652 /* Shot.swift */,
+				DA5221D9282186C200D3B652 /* YellowShot.swift */,
 				A0F478E3281719A4006F2BFF /* PowerUp.swift */,
 				DA5221D0282170A500D3B652 /* BluePowerUp.swift */,
 				DA5221D2282170B900D3B652 /* GreenPowerUp.swift */,
 				A0371CD6280F20DB00DA3EE9 /* protocol GameBackgroundSpriteable + Extension.swift */,
-				A0263CBE280DC879006EE8A3 /* PlayerPlane.swift */,
-				DA26F82A281D6654001E7201 /* Enemy.swift */,
-				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
-				DA5221D72821829700D3B652 /* Shot.swift */,
-				DA5221DB2821909F00D3B652 /* Assets.swift */,
-				DA5221D9282186C200D3B652 /* YellowShot.swift */,
+				A022E8CE280B1114008BC4F3 /* Background.swift */,
+				A022E8BF280B0BD2008BC4F3 /* GameViewController.swift */,
 				A022E8C1280B0BD2008BC4F3 /* Main.storyboard */,
 				A022E8C4280B0BD8008BC4F3 /* Assets.xcassets */,
 				A022E8C6280B0BD8008BC4F3 /* LaunchScreen.storyboard */,
@@ -220,6 +223,7 @@
 				DA5221D3282170B900D3B652 /* GreenPowerUp.swift in Sources */,
 				A0711438280C3F1500DD644D /* Island.swift in Sources */,
 				A0F478E4281719A4006F2BFF /* PowerUp.swift in Sources */,
+				DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */,
 				DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */,
 				DA5221D82821829700D3B652 /* Shot.swift in Sources */,
 				A022E8CF280B1114008BC4F3 /* Background.swift in Sources */,

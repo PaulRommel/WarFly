@@ -14,6 +14,9 @@ class GameScene: SKScene {
     
     override func didMove(to view: SKView) {
         
+        physicsWorld.contactDelegate = self
+        physicsWorld.gravity = CGVector.zero
+        
         configureStartScene()
         spawnClouds()
         spawnIslands()
@@ -23,7 +26,6 @@ class GameScene: SKScene {
         }
         
         spawnPowerUp()
-        //        spawnEnemy(count: 5)
         spawnEnemies()
     }
     
@@ -147,5 +149,17 @@ class GameScene: SKScene {
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         playerFire()
+    }
+}
+
+
+extension GameScene: SKPhysicsContactDelegate {
+    
+    func didBegin(_ contact: SKPhysicsContact) {
+        print("contact detected")
+    }
+    
+    func didEnd(_ contact: SKPhysicsContact) {
+        
     }
 }
