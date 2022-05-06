@@ -31,6 +31,7 @@
 		DA5221D82821829700D3B652 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D72821829700D3B652 /* Shot.swift */; };
 		DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D9282186C200D3B652 /* YellowShot.swift */; };
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
+		DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EA2825888F00D1FC91 /* MenuScene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		DA5221D72821829700D3B652 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		DA5221D9282186C200D3B652 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		DAD548EA2825888F00D1FC91 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				A0371CD6280F20DB00DA3EE9 /* protocol GameBackgroundSpriteable + Extension.swift */,
 				A0263CBE280DC879006EE8A3 /* PlayerPlane.swift */,
 				DA26F82A281D6654001E7201 /* Enemy.swift */,
+				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
 				DA5221D72821829700D3B652 /* Shot.swift */,
 				DA5221DB2821909F00D3B652 /* Assets.swift */,
 				DA5221D9282186C200D3B652 /* YellowShot.swift */,
@@ -217,6 +220,7 @@
 				DA5221D3282170B900D3B652 /* GreenPowerUp.swift in Sources */,
 				A0711438280C3F1500DD644D /* Island.swift in Sources */,
 				A0F478E4281719A4006F2BFF /* PowerUp.swift in Sources */,
+				DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */,
 				DA5221D82821829700D3B652 /* Shot.swift in Sources */,
 				A022E8CF280B1114008BC4F3 /* Background.swift in Sources */,
 			);
