@@ -31,6 +31,7 @@
 		DA5221D82821829700D3B652 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D72821829700D3B652 /* Shot.swift */; };
 		DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D9282186C200D3B652 /* YellowShot.swift */; };
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
+		DA779BB728303116009A72F2 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA779BB628303116009A72F2 /* SceneManager.swift */; };
 		DAAC361C282FDB8600A155FF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC361B282FDB8600A155FF /* HUD.swift */; };
 		DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3623282FE23900A155FF /* ButtonNode.swift */; };
 		DAAC3626282FE92500A155FF /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3625282FE92500A155FF /* PauseScene.swift */; };
@@ -64,6 +65,7 @@
 		DA5221D72821829700D3B652 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		DA5221D9282186C200D3B652 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		DA779BB628303116009A72F2 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		DAAC361B282FDB8600A155FF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		DAAC3623282FE23900A155FF /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		DAAC3625282FE92500A155FF /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			children = (
 				DA5221DB2821909F00D3B652 /* Assets.swift */,
 				DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */,
+				DA779BB628303116009A72F2 /* SceneManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				A022E8B8280B0BD2008BC4F3 /* AppDelegate.swift in Sources */,
 				DA5221DC2821909F00D3B652 /* Assets.swift in Sources */,
 				DA26F82B281D6654001E7201 /* Enemy.swift in Sources */,
+				DA779BB728303116009A72F2 /* SceneManager.swift in Sources */,
 				DA5221D3282170B900D3B652 /* GreenPowerUp.swift in Sources */,
 				A0711438280C3F1500DD644D /* Island.swift in Sources */,
 				A0F478E4281719A4006F2BFF /* PowerUp.swift in Sources */,

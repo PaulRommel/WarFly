@@ -10,6 +10,8 @@ import GameplayKit
 
 
 class GameScene: SKScene {
+    
+    let sceneManager = SceneManager.shared
 
     fileprivate var player: PlayerPlane!
     fileprivate let hud = HUD()
@@ -17,6 +19,11 @@ class GameScene: SKScene {
   
     
     override func didMove(to view: SKView) {
+        
+        // checking if scene persists
+        guard sceneManager.gameScene == nil else { return }
+        
+        sceneManager.gameScene = self
         
         physicsWorld.contactDelegate = self
         physicsWorld.gravity = CGVector.zero
