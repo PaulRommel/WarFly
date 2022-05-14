@@ -8,11 +8,13 @@
 import SpriteKit
 import GameplayKit
 
+
 class GameScene: SKScene {
-    
+
     fileprivate var player: PlayerPlane!
     fileprivate let hud = HUD()
     fileprivate let screenSize = UIScreen.main.bounds.size
+  
     
     override func didMove(to view: SKView) {
         
@@ -35,7 +37,7 @@ class GameScene: SKScene {
     }
     
     fileprivate func spawnPowerUp() {
-        
+
         let spawnAction = SKAction.run {
             let randomNumber = Int(arc4random_uniform(2))
             let powerUp = randomNumber == 1 ? BluePowerUp() : GreenPowerUp()
@@ -57,12 +59,13 @@ class GameScene: SKScene {
         let spawnSpiralAction = SKAction.run { [unowned self] in
             self.spawnSpiralOfEnemies()
         }
+        
         self.run(SKAction.repeatForever(SKAction.sequence([waitAction, spawnSpiralAction])))
     }
     
     fileprivate func spawnSpiralOfEnemies() {
-        let enemyTextureAtlas1 = Assets.shared.enemy_1Atlas
-        let enemyTextureAtlas2 = Assets.shared.enemy_2Atlas
+        let enemyTextureAtlas1 = Assets.shared.enemy_1Atlas//SKTextureAtlas(named: "Enemy_1")
+        let enemyTextureAtlas2 = Assets.shared.enemy_2Atlas//SKTextureAtlas(named: "Enemy_2")
         SKTextureAtlas.preloadTextureAtlases([enemyTextureAtlas1, enemyTextureAtlas2]) { [unowned self] in
             
             let randomNumber = Int(arc4random_uniform(2))
@@ -70,7 +73,7 @@ class GameScene: SKScene {
             let textureAtlas = arrayOfAtlases[randomNumber]
             
             let waitAction = SKAction.wait(forDuration: 1.0)
-            let spawnEnemy = SKAction.run ({ [unowned self] in
+            let spawnEnemy = SKAction.run({ [unowned self] in
                 let textureNames = textureAtlas.textureNames.sorted()
                 let texture = textureAtlas.textureNamed(textureNames[12])
                 let enemy = Enemy(enemyTexture: texture)
@@ -86,7 +89,7 @@ class GameScene: SKScene {
     }
     
     fileprivate func spawnClouds() {
-        let spawnCloudWait = SKAction.wait(forDuration: 2)
+        let spawnCloudWait = SKAction.wait(forDuration: 1)
         let spawnCloudAction = SKAction.run {
             let cloud = Cloud.populate(at: nil)
             self.addChild(cloud)
@@ -98,7 +101,7 @@ class GameScene: SKScene {
     }
     
     fileprivate func spawnIslands() {
-        let spawnIslandWait = SKAction.wait(forDuration: 3)
+        let spawnIslandWait = SKAction.wait(forDuration: 2)
         let spawnIslandAction = SKAction.run {
             let island = Island.populate(at: nil)
             self.addChild(island)

@@ -32,6 +32,7 @@
 		DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D9282186C200D3B652 /* YellowShot.swift */; };
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
 		DAAC361C282FDB8600A155FF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC361B282FDB8600A155FF /* HUD.swift */; };
+		DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3623282FE23900A155FF /* ButtonNode.swift */; };
 		DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EA2825888F00D1FC91 /* MenuScene.swift */; };
 		DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		DA5221D9282186C200D3B652 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		DAAC361B282FDB8600A155FF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		DAAC3623282FE23900A155FF /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		DAD548EA2825888F00D1FC91 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +153,7 @@
 		DAAC3620282FDE8D00A155FF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DAAC3623282FE23900A155FF /* ButtonNode.swift */,
 				DAAC361B282FDB8600A155FF /* HUD.swift */,
 				A0263CBE280DC879006EE8A3 /* PlayerPlane.swift */,
 				DA26F82A281D6654001E7201 /* Enemy.swift */,
@@ -279,6 +282,7 @@
 				DAAC361C282FDB8600A155FF /* HUD.swift in Sources */,
 				DA5221D82821829700D3B652 /* Shot.swift in Sources */,
 				A022E8CF280B1114008BC4F3 /* Background.swift in Sources */,
+				DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

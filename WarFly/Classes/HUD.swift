@@ -17,7 +17,7 @@ class HUD: SKScene {
     let life3 = SKSpriteNode(imageNamed: "life")
     
     func configureUI(screenSize: CGSize) {
-        scoreBackground.position = CGPoint(x: scoreBackground.size.width + 10, y: self.size.height - screenSize.height / 2 - 30)
+        scoreBackground.position = CGPoint(x: scoreBackground.size.width + 10, y: screenSize.height - scoreBackground.size.height / 2 - 30)
         scoreBackground.anchorPoint = CGPoint(x: 1.0, y: 0.5)
         scoreBackground.zPosition = 99
         addChild(scoreBackground)
@@ -43,4 +43,5 @@ class HUD: SKScene {
             addChild(life)
         }
     }
+    
 }
