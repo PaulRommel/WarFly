@@ -31,6 +31,7 @@
 		DA5221D82821829700D3B652 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D72821829700D3B652 /* Shot.swift */; };
 		DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D9282186C200D3B652 /* YellowShot.swift */; };
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
+		DAAC361C282FDB8600A155FF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC361B282FDB8600A155FF /* HUD.swift */; };
 		DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EA2825888F00D1FC91 /* MenuScene.swift */; };
 		DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		DA5221D72821829700D3B652 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		DA5221D9282186C200D3B652 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		DAAC361B282FDB8600A155FF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		DAD548EA2825888F00D1FC91 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,26 +97,12 @@
 		A022E8B6280B0BD2008BC4F3 /* WarFly */ = {
 			isa = PBXGroup;
 			children = (
-				A022E8B7280B0BD2008BC4F3 /* AppDelegate.swift */,
-				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
-				A022E8BD280B0BD2008BC4F3 /* GameScene.swift */,
-				DA5221DB2821909F00D3B652 /* Assets.swift */,
-				DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */,
-				A0263CBE280DC879006EE8A3 /* PlayerPlane.swift */,
-				DA26F82A281D6654001E7201 /* Enemy.swift */,
-				A0711437280C3F1500DD644D /* Island.swift */,
-				A0C4236F280C909A00C4099D /* Cloud.swift */,
-				DA5221D72821829700D3B652 /* Shot.swift */,
-				DA5221D9282186C200D3B652 /* YellowShot.swift */,
-				A0F478E3281719A4006F2BFF /* PowerUp.swift */,
-				DA5221D0282170A500D3B652 /* BluePowerUp.swift */,
-				DA5221D2282170B900D3B652 /* GreenPowerUp.swift */,
-				A0371CD6280F20DB00DA3EE9 /* protocol GameBackgroundSpriteable + Extension.swift */,
-				A022E8CE280B1114008BC4F3 /* Background.swift */,
-				A022E8BF280B0BD2008BC4F3 /* GameViewController.swift */,
-				A022E8C1280B0BD2008BC4F3 /* Main.storyboard */,
-				A022E8C4280B0BD8008BC4F3 /* Assets.xcassets */,
-				A022E8C6280B0BD8008BC4F3 /* LaunchScreen.storyboard */,
+				DAAC3622282FDECC00A155FF /* Scenes */,
+				DAAC3621282FDEA800A155FF /* Managers */,
+				DAAC3620282FDE8D00A155FF /* Classes */,
+				DAAC361F282FDE3F00A155FF /* Protocols + Extensions */,
+				DAAC361E282FDE1500A155FF /* Controllers */,
+				DAAC361D282FDDDF00A155FF /* Supporting files */,
 				DA5221D62821824700D3B652 /* Atlases */,
 			);
 			path = WarFly;
@@ -131,6 +119,69 @@
 				DA5221D4282180E400D3B652 /* YellowShot.atlas */,
 			);
 			path = Atlases;
+			sourceTree = "<group>";
+		};
+		DAAC361D282FDDDF00A155FF /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A022E8B7280B0BD2008BC4F3 /* AppDelegate.swift */,
+				A022E8C1280B0BD2008BC4F3 /* Main.storyboard */,
+				A022E8C4280B0BD8008BC4F3 /* Assets.xcassets */,
+				A022E8C6280B0BD8008BC4F3 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		DAAC361E282FDE1500A155FF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A022E8BF280B0BD2008BC4F3 /* GameViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DAAC361F282FDE3F00A155FF /* Protocols + Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A0371CD6280F20DB00DA3EE9 /* protocol GameBackgroundSpriteable + Extension.swift */,
+			);
+			path = "Protocols + Extensions";
+			sourceTree = "<group>";
+		};
+		DAAC3620282FDE8D00A155FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DAAC361B282FDB8600A155FF /* HUD.swift */,
+				A0263CBE280DC879006EE8A3 /* PlayerPlane.swift */,
+				DA26F82A281D6654001E7201 /* Enemy.swift */,
+				A0711437280C3F1500DD644D /* Island.swift */,
+				A0C4236F280C909A00C4099D /* Cloud.swift */,
+				DA5221D72821829700D3B652 /* Shot.swift */,
+				DA5221D9282186C200D3B652 /* YellowShot.swift */,
+				A0F478E3281719A4006F2BFF /* PowerUp.swift */,
+				DA5221D0282170A500D3B652 /* BluePowerUp.swift */,
+				DA5221D2282170B900D3B652 /* GreenPowerUp.swift */,
+				A022E8CE280B1114008BC4F3 /* Background.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		DAAC3621282FDEA800A155FF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DA5221DB2821909F00D3B652 /* Assets.swift */,
+				DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		DAAC3622282FDECC00A155FF /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
+				A022E8BD280B0BD2008BC4F3 /* GameScene.swift */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,6 +276,7 @@
 				A0F478E4281719A4006F2BFF /* PowerUp.swift in Sources */,
 				DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */,
 				DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */,
+				DAAC361C282FDB8600A155FF /* HUD.swift in Sources */,
 				DA5221D82821829700D3B652 /* Shot.swift in Sources */,
 				A022E8CF280B1114008BC4F3 /* Background.swift in Sources */,
 			);
