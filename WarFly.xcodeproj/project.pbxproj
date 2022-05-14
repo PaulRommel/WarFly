@@ -33,6 +33,7 @@
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
 		DAAC361C282FDB8600A155FF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC361B282FDB8600A155FF /* HUD.swift */; };
 		DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3623282FE23900A155FF /* ButtonNode.swift */; };
+		DAAC3626282FE92500A155FF /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3625282FE92500A155FF /* PauseScene.swift */; };
 		DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EA2825888F00D1FC91 /* MenuScene.swift */; };
 		DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		DAAC361B282FDB8600A155FF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		DAAC3623282FE23900A155FF /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
+		DAAC3625282FE92500A155FF /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
 		DAD548EA2825888F00D1FC91 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
+				DAAC3625282FE92500A155FF /* PauseScene.swift */,
 				A022E8BD280B0BD2008BC4F3 /* GameScene.swift */,
 			);
 			path = Scenes;
@@ -279,6 +282,7 @@
 				A0F478E4281719A4006F2BFF /* PowerUp.swift in Sources */,
 				DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */,
 				DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */,
+				DAAC3626282FE92500A155FF /* PauseScene.swift in Sources */,
 				DAAC361C282FDB8600A155FF /* HUD.swift in Sources */,
 				DA5221D82821829700D3B652 /* Shot.swift in Sources */,
 				A022E8CF280B1114008BC4F3 /* Background.swift in Sources */,
