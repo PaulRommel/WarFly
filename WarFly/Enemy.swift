@@ -29,8 +29,10 @@ class Enemy: SKSpriteNode {
     
     func flySpiral() {
         let screenSize = UIScreen.main.bounds
+        
         let timeHorizontal: Double = 3
         let timeVertical: Double = 5
+        
         let moveLeft = SKAction.moveTo(x: 50, duration: timeHorizontal)
         moveLeft.timingMode = .easeInEaseOut
         let moveRight = SKAction.moveTo(x: screenSize.width - 50, duration: timeHorizontal)
@@ -39,6 +41,7 @@ class Enemy: SKSpriteNode {
         let randomNumber = Int(arc4random_uniform(2))
         
         let asideMovementSequence = randomNumber == EnemyDirection.left.rawValue ? SKAction.sequence([moveLeft, moveRight]) : SKAction.sequence([moveRight, moveLeft])
+        
         let foreverAsideMovement = SKAction.repeatForever(asideMovementSequence)
         
         let forwardMovement = SKAction.moveTo(y: -105, duration: timeVertical)

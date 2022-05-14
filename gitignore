@@ -1,0 +1,51 @@
+Last login: Sat May 14 09:28:03 on console
+paul@iMac-Pavel ~ % cd /Users/paul/Documents/SwiftBook/WarFly/WarFly 
+paul@iMac-Pavel WarFly % ls
+AppDelegate.swift
+Assets.swift
+Assets.xcassets
+Atlases
+Background.swift
+Base.lproj
+BitMaskCategory.swift
+BluePowerUp.swift
+Cloud.swift
+Enemy.swift
+GameScene.swift
+GameViewController.swift
+GreenPowerUp.swift
+Island.swift
+MenuScene.swift
+PlayerPlane.swift
+PowerUp.swift
+Shot.swift
+YellowShot.swift
+protocol GameBackgroundSpriteable + Extension.swift
+paul@iMac-Pavel WarFly % thouch .gitignore
+zsh: command not found: thouch
+paul@iMac-Pavel WarFly % touch .gitignore
+paul@iMac-Pavel WarFly % vim .gitignore
+
+### SwiftPackageManager ###
+Packages
+xcuserdata
+*.xcodeproj
+
+
+### SwiftPM ###
+
+
+### Xcode ###
+
+## Xcode 8 and earlier
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+/*.gcno
+**/xcshareddata/WorkspaceSettings.xcsettings
+
+# End of https://www.toptal.com/developers/gitignore/api/xcode,swift,swiftpm,swiftpackagemanager,cocoapods
+

@@ -43,7 +43,6 @@ final class Cloud: SKSpriteNode, GameBackgroundSpriteable {
         let movementSpeed: CGFloat = 150.0
         let duration = moveDistance / movementSpeed
         return SKAction.move(to: movePoint, duration: TimeInterval(duration))
-    }
-    
+    }    
 }
  
