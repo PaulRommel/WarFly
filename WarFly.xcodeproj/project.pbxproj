@@ -31,6 +31,8 @@
 		DA5221D82821829700D3B652 /* Shot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D72821829700D3B652 /* Shot.swift */; };
 		DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D9282186C200D3B652 /* YellowShot.swift */; };
 		DA5221DC2821909F00D3B652 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221DB2821909F00D3B652 /* Assets.swift */; };
+		DA5484A3283414260062DBC2 /* ParentScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5484A2283414260062DBC2 /* ParentScene.swift */; };
+		DA5484A5283417EF0062DBC2 /* OptionsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5484A4283417EF0062DBC2 /* OptionsScene.swift */; };
 		DA779BB728303116009A72F2 /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA779BB628303116009A72F2 /* SceneManager.swift */; };
 		DAAC361C282FDB8600A155FF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC361B282FDB8600A155FF /* HUD.swift */; };
 		DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3623282FE23900A155FF /* ButtonNode.swift */; };
@@ -65,6 +67,8 @@
 		DA5221D72821829700D3B652 /* Shot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shot.swift; sourceTree = "<group>"; };
 		DA5221D9282186C200D3B652 /* YellowShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowShot.swift; sourceTree = "<group>"; };
 		DA5221DB2821909F00D3B652 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		DA5484A2283414260062DBC2 /* ParentScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentScene.swift; sourceTree = "<group>"; };
+		DA5484A4283417EF0062DBC2 /* OptionsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsScene.swift; sourceTree = "<group>"; };
 		DA779BB628303116009A72F2 /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 		DAAC361B282FDB8600A155FF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		DAAC3623282FE23900A155FF /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
@@ -189,6 +193,8 @@
 				DAD548EA2825888F00D1FC91 /* MenuScene.swift */,
 				DAAC3625282FE92500A155FF /* PauseScene.swift */,
 				A022E8BD280B0BD2008BC4F3 /* GameScene.swift */,
+				DA5484A2283414260062DBC2 /* ParentScene.swift */,
+				DA5484A4283417EF0062DBC2 /* OptionsScene.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -286,11 +292,13 @@
 				A0F478E4281719A4006F2BFF /* PowerUp.swift in Sources */,
 				DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */,
 				DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */,
+				DA5484A3283414260062DBC2 /* ParentScene.swift in Sources */,
 				DAAC3626282FE92500A155FF /* PauseScene.swift in Sources */,
 				DAAC361C282FDB8600A155FF /* HUD.swift in Sources */,
 				DA5221D82821829700D3B652 /* Shot.swift in Sources */,
 				A022E8CF280B1114008BC4F3 /* Background.swift in Sources */,
 				DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */,
+				DA5484A5283417EF0062DBC2 /* OptionsScene.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
