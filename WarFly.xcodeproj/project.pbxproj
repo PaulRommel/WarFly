@@ -25,6 +25,7 @@
 		DA26F82D281D66DA001E7201 /* Enemy_1.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA26F82C281D66DA001E7201 /* Enemy_1.atlas */; };
 		DA26F82F281D85AC001E7201 /* Enemy_2.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA26F82E281D85AC001E7201 /* Enemy_2.atlas */; };
 		DA507D6B283A4BFF0034681D /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA507D6A283A4BFF0034681D /* GameOverScene.swift */; };
+		DA507D6E283A5AE30034681D /* hitSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = DA507D6D283A5AE30034681D /* hitSound.wav */; };
 		DA5221CF282166FE00D3B652 /* BluePowerUp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = DA5221CE282166FE00D3B652 /* BluePowerUp.atlas */; };
 		DA5221D1282170A500D3B652 /* BluePowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D0282170A500D3B652 /* BluePowerUp.swift */; };
 		DA5221D3282170B900D3B652 /* GreenPowerUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5221D2282170B900D3B652 /* GreenPowerUp.swift */; };
@@ -65,6 +66,8 @@
 		DA26F82C281D66DA001E7201 /* Enemy_1.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_1.atlas; sourceTree = "<group>"; };
 		DA26F82E281D85AC001E7201 /* Enemy_2.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = Enemy_2.atlas; sourceTree = "<group>"; };
 		DA507D6A283A4BFF0034681D /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		DA507D6C283A5AD70034681D /* backgroundMusic.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = backgroundMusic.m4a; sourceTree = "<group>"; };
+		DA507D6D283A5AE30034681D /* hitSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitSound.wav; sourceTree = "<group>"; };
 		DA5221CE282166FE00D3B652 /* BluePowerUp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = BluePowerUp.atlas; sourceTree = "<group>"; };
 		DA5221D0282170A500D3B652 /* BluePowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluePowerUp.swift; sourceTree = "<group>"; };
 		DA5221D2282170B900D3B652 /* GreenPowerUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenPowerUp.swift; sourceTree = "<group>"; };
@@ -153,6 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				A022E8B7280B0BD2008BC4F3 /* AppDelegate.swift */,
+				DA507D6C283A5AD70034681D /* backgroundMusic.m4a */,
+				DA507D6D283A5AE30034681D /* hitSound.wav */,
 				A022E8C1280B0BD2008BC4F3 /* Main.storyboard */,
 				A022E8C4280B0BD8008BC4F3 /* Assets.xcassets */,
 				A022E8C6280B0BD8008BC4F3 /* LaunchScreen.storyboard */,
@@ -287,6 +292,7 @@
 				DA78C4E6283574D80060E782 /* EnemyExplosion.sks in Resources */,
 				A022E8C5280B0BD8008BC4F3 /* Assets.xcassets in Resources */,
 				DA5221CF282166FE00D3B652 /* BluePowerUp.atlas in Resources */,
+				DA507D6E283A5AE30034681D /* hitSound.wav in Resources */,
 				A022E8C8280B0BD8008BC4F3 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
