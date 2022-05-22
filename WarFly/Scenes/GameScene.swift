@@ -164,6 +164,18 @@ class GameScene: ParentScene {
             }
         }
         
+        enumerateChildNodes(withName: "bluePowerUp") { (node, stop) in
+            if node.position.y <= -100 {
+                node.removeFromParent()
+            }
+        }
+        
+        enumerateChildNodes(withName: "greenPowerUp") { (node, stop) in
+            if node.position.y <= -100 {
+                node.removeFromParent()
+            }
+        }
+        
         enumerateChildNodes(withName: "shotSprite") { (node, stop) in
             if node.position.y >= self.size.height + 100 {
                 node.removeFromParent()
@@ -234,20 +246,37 @@ extension GameScene: SKPhysicsContactDelegate {
             }
             
         case [.powerUp, .player]: print("powerUp vs player")
+            
+        if contact.bodyA.node?.parent != nil && contact.bodyB.node?.parent != nil  {
+           
+            if contact.bodyA.node?.name == "bluePowerUp" {
+                contact.bodyA.node?.removeFromParent()
+                lives = 3
+                player.bluePowerUp()
+            } else if contact.bodyB.node?.name == "bluePowerUp" {
+                contact.bodyB.node?.removeFromParent()
+                lives = 3
+                player.bluePowerUp()
+            }
+            
+            if contact.bodyA.node?.name == "greenPowerUp" {
+                contact.bodyA.node?.removeFromParent()
+                player.greenPowerUp()
+            } else {
+                contact.bodyB.node?.removeFromParent()
+                player.greenPowerUp()
+            }
+        }
+            
         case [.enemy, .shot]: print("enemy vs shot")
-        hud.score += 5
             
             if contact.bodyA.node?.parent != nil {
                 contact.bodyA.node?.removeFromParent()
-            }
-            
-            if contact.bodyB.node?.parent != nil {
                 contact.bodyB.node?.removeFromParent()
+                hud.score += 5
+                addChild(explosion!)
+                self.run(waitForExplosionAction){ explosion?.removeFromParent() }
             }
-            addChild(explosion!)
-            self.run(waitForExplosionAction, completion: {
-                explosion?.removeFromParent()
-            })
             
         default: preconditionFailure("Unable to detect collision category")
         }
