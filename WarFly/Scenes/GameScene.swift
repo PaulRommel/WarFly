@@ -10,10 +10,30 @@ import GameplayKit
 
 
 class GameScene: ParentScene {
-
+    
     fileprivate var player: PlayerPlane!
     fileprivate let hud = HUD()
     fileprivate let screenSize = UIScreen.main.bounds.size
+    fileprivate var lives = 3 {
+        didSet {
+            switch lives {
+            case 3:
+                hud.life1.isHidden = false
+                hud.life2.isHidden = false
+                hud.life3.isHidden = false
+            case 2:
+                hud.life1.isHidden = false
+                hud.life2.isHidden = false
+                hud.life3.isHidden = true
+            case 1:
+                hud.life1.isHidden = false
+                hud.life2.isHidden = true
+                hud.life3.isHidden = true
+            default:
+                break
+            }
+        }
+    }
     
     override func didMove(to view: SKView) {
         
@@ -41,7 +61,7 @@ class GameScene: ParentScene {
     }
     
     fileprivate func spawnPowerUp() {
-
+        
         let spawnAction = SKAction.run {
             let randomNumber = Int(arc4random_uniform(2))
             let powerUp = randomNumber == 1 ? BluePowerUp() : GreenPowerUp()
@@ -183,28 +203,46 @@ extension GameScene: SKPhysicsContactDelegate {
         let explosion = SKEmitterNode(fileNamed: "EnemyExplosion")
         let contactPoint = contact.contactPoint
         explosion?.position = contactPoint
-        let waitForExplosionAction = SKAction.wait(forDuration: 1.0)
+        explosion?.zPosition = 25
+        let waitForExplosionAction = SKAction.wait(forDuration: 2.0)
         
         let contactCategory: BitMaskCategory = [contact.bodyA.category, contact.bodyB.category]
         switch contactCategory {
         case [.enemy, .player]: print("enemy vs player")
+            
             if contact.bodyA.node?.name == "sprite" {
-                contact.bodyA.node?.removeFromParent()
+                if contact.bodyA.node?.parent != nil {
+                    contact.bodyA.node?.removeFromParent()
+                    lives -= 1
+                }
             } else {
+                if contact.bodyB.node?.parent != nil {
+                    contact.bodyB.node?.removeFromParent()
+                    lives -= 1
+                }
+            }
+            addChild(explosion!)
+            self.run(waitForExplosionAction, completion: {
+                explosion?.removeFromParent()
+            })
+            
+            print(lives)
+            
+        case [.powerUp, .player]: print("powerUp vs player")
+        case [.enemy, .shot]: print("enemy vs shot")
+            
+            if contact.bodyA.node?.parent != nil {
+                contact.bodyA.node?.removeFromParent()
+            }
+            
+            if contact.bodyB.node?.parent != nil {
                 contact.bodyB.node?.removeFromParent()
             }
             addChild(explosion!)
             self.run(waitForExplosionAction, completion: {
                 explosion?.removeFromParent()
             })
-        case [.powerUp, .player]: print("powerUp vs player")
-        case [.enemy, .shot]: print("enemy vs shot")
-            contact.bodyA.node?.removeFromParent()
-            contact.bodyB.node?.removeFromParent()
-            addChild(explosion!)
-            self.run(waitForExplosionAction, completion: {
-                explosion?.removeFromParent()
-            })
+            
         default: preconditionFailure("Unable to detect collision category")
         }
     }
