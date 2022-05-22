@@ -42,6 +42,7 @@
 		DAAC361C282FDB8600A155FF /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC361B282FDB8600A155FF /* HUD.swift */; };
 		DAAC3624282FE23900A155FF /* ButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3623282FE23900A155FF /* ButtonNode.swift */; };
 		DAAC3626282FE92500A155FF /* PauseScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAAC3625282FE92500A155FF /* PauseScene.swift */; };
+		DAD50D91283A90EB0005D281 /* GameSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD50D90283A90EB0005D281 /* GameSettings.swift */; };
 		DAD548EB2825888F00D1FC91 /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EA2825888F00D1FC91 /* MenuScene.swift */; };
 		DAD548ED28258E9800D1FC91 /* BitMaskCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */; };
 /* End PBXBuildFile section */
@@ -84,6 +85,7 @@
 		DAAC361B282FDB8600A155FF /* HUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
 		DAAC3623282FE23900A155FF /* ButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonNode.swift; sourceTree = "<group>"; };
 		DAAC3625282FE92500A155FF /* PauseScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScene.swift; sourceTree = "<group>"; };
+		DAD50D90283A90EB0005D281 /* GameSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSettings.swift; sourceTree = "<group>"; };
 		DAD548EA2825888F00D1FC91 /* MenuScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitMaskCategory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -206,6 +208,7 @@
 				DA5221DB2821909F00D3B652 /* Assets.swift */,
 				DAD548EC28258E9800D1FC91 /* BitMaskCategory.swift */,
 				DA779BB628303116009A72F2 /* SceneManager.swift */,
+				DAD50D90283A90EB0005D281 /* GameSettings.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			files = (
 				A022E8BE280B0BD2008BC4F3 /* GameScene.swift in Sources */,
 				DA5221DA282186C200D3B652 /* YellowShot.swift in Sources */,
+				DAD50D91283A90EB0005D281 /* GameSettings.swift in Sources */,
 				A0263CBF280DC879006EE8A3 /* PlayerPlane.swift in Sources */,
 				A0371CD7280F20DB00DA3EE9 /* protocol GameBackgroundSpriteable + Extension.swift in Sources */,
 				A0C42370280C909A00C4099D /* Cloud.swift in Sources */,

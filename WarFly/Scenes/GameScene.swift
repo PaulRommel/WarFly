@@ -39,11 +39,15 @@ class GameScene: ParentScene {
     
     override func didMove(to view: SKView) {
         
-        if let musicURL = Bundle.main.url(forResource: "backgroundMusic", withExtension: "m4a") {
-            backgroundMusic = SKAudioNode(url: musicURL)
-            addChild(backgroundMusic)
+        gameSettings.loadGameSettings()
+        
+        if gameSettings.isMusic && backgroundMusic == nil {
+            if let musicURL = Bundle.main.url(forResource: "backgroundMusic", withExtension: "m4a") {
+                backgroundMusic = SKAudioNode(url: musicURL)
+                addChild(backgroundMusic)
+            }
         }
-            
+        
         self.scene?.isPaused = false
         guard sceneManager.gameScene == nil else { return }
         
@@ -254,33 +258,37 @@ extension GameScene: SKPhysicsContactDelegate {
             
         case [.powerUp, .player]: print("powerUp vs player")
             
-        if contact.bodyA.node?.parent != nil && contact.bodyB.node?.parent != nil  {
-           
-            if contact.bodyA.node?.name == "bluePowerUp" {
-                contact.bodyA.node?.removeFromParent()
-                lives = 3
-                player.bluePowerUp()
-            } else if contact.bodyB.node?.name == "bluePowerUp" {
-                contact.bodyB.node?.removeFromParent()
-                lives = 3
-                player.bluePowerUp()
+            if contact.bodyA.node?.parent != nil && contact.bodyB.node?.parent != nil  {
+                
+                if contact.bodyA.node?.name == "bluePowerUp" {
+                    contact.bodyA.node?.removeFromParent()
+                    lives = 3
+                    player.bluePowerUp()
+                } else if contact.bodyB.node?.name == "bluePowerUp" {
+                    contact.bodyB.node?.removeFromParent()
+                    lives = 3
+                    player.bluePowerUp()
+                }
+                
+                if contact.bodyA.node?.name == "greenPowerUp" {
+                    contact.bodyA.node?.removeFromParent()
+                    player.greenPowerUp()
+                } else {
+                    contact.bodyB.node?.removeFromParent()
+                    player.greenPowerUp()
+                }
             }
-            
-            if contact.bodyA.node?.name == "greenPowerUp" {
-                contact.bodyA.node?.removeFromParent()
-                player.greenPowerUp()
-            } else {
-                contact.bodyB.node?.removeFromParent()
-                player.greenPowerUp()
-            }
-        }
             
         case [.enemy, .shot]: print("enemy vs shot")
             
             if contact.bodyA.node?.parent != nil && contact.bodyB.node?.parent != nil {
                 contact.bodyA.node?.removeFromParent()
                 contact.bodyB.node?.removeFromParent()
-                self.run(SKAction.playSoundFileNamed("hitSound", waitForCompletion: false))
+                
+                if gameSettings.isSound {
+                    self.run(SKAction.playSoundFileNamed("hitSound", waitForCompletion: false))
+                }
+                
                 hud.score += 5
                 addChild(explosion!)
                 self.run(waitForExplosionAction){ explosion?.removeFromParent() }
